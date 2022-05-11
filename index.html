@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+<script type="text/javascript" src="loading-bar.js"></script>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Atrick.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!---->
+<canvas id="c"></canvas>
+<center><h1 class="unselect">Welcome to Atrick.com</h1>
+<h2 class="unselect">It took a while, but its finally up!<h2>
+</div>
+<div class="myBar label-center"></div>
+<p>⠀</p>
+<button id="btn">Click me</button>
+<script>
+    function test() {
+      bar.set(100, true)
+      setTimeout(() => { document.location = 'file:///D:/atrick_web/rewrite/home.html' }, 5000);
+    }
+    let btn = document.getElementById("btn");
+    btn.addEventListener('click', event => {
+      test();
+    });
+    var bar = new ldBar(".myBar", {
+    "value": "0",
+    "type": "fill",
+    "img": "LOADING.png",
+    "duration" : "5"
+    });
+</script>
+</center>
+<!---->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
