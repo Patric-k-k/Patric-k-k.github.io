@@ -10,7 +10,16 @@
 <!---->
 <canvas id="c"></canvas>
 <center><h1 style="font-size: 500" class="unselect">Home</h1></center>
-
+<button id="btn" class="unselect">Info</button>
+<script>
+    function test() {
+      document.location.href = 'https://patric-k-k.github.io/info.html'
+    }
+    let btn = document.getElementById("btn");
+    btn.addEventListener('click', event => {
+      test();
+    });
+</script>
 <!---->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script><script  src="./script.js"></script>
 </body>
