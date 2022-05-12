@@ -6,6 +6,12 @@
   -ms-user-select: none;
   user-select: none;
 }
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
 canvas {
   width: 1;
   height: 1;
