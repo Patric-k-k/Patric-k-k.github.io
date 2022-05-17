@@ -7,7 +7,7 @@ var animations = [];
 var circles = [];
 
 var colorPicker = (function() {
-  const color = []
+  const color = ["#FF6138", "#FFBE53", "#2980B9", "#282741"]
   for(var i = 0; i < 5; i++){
     const random_hex_color_code = () => {
       let n = (Math.random() * 0xfffff * 1000000).toString(16);
