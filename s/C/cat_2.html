@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+<script type="text/javascript" src="loading-bar.js"></script>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Patric-k-k</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+    <p>Game</p>
+    <img src="i/Cat_2.png"></img>
+    <br>
+    <button type="button" class="play">
+        <span class="button__text">Wait</span>
+        <span class="button__icon">
+            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </span>
+    </button>
+    </center>
+    <script>
+        let btn = document.getElementsByClassName("play")[0];
+        btn.addEventListener('click', event => {
+            test();
+        });
+        function test() {
+            var path = Math.random(1,4);
+            if (path < 1) {
+                console.log("Error!");
+            if (path == 1) {
+                document.location.href = 'patric-k-k.github.io/s/C/Cat_2-1.html'
+            } else if (path == 2) {
+                document.location.href = 'patric-k-k.github.io/s/C/Cat_2-2.html'
+            } else if (path == 3) {
+                document.location.href = 'patric-k-k.github.io/s/C/Cat_2-3.html'
+            } else if (path == 4) {
+                document.location.href = 'patric-k-k.github.io/s/C/Cat_2-4.html'
+            }
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
