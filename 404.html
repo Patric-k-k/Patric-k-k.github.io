@@ -20,14 +20,30 @@
             <ion-icon style="font-size: 50px;"name="arrow-undo-outline"></ion-icon>
         </span>
     </button>
+    <br>
+    <h2>Warning!!! The Testing Branch takes you to a port on your local network, because I have it so that its hosting the testing branch on my network. Its pretty much private.</h2>
+    <br>
+    <button type="button" class="TESTING">
+        <span style="font-size: 50px;" class="button__text">TESTING BRANCH</span>
+        <span style="font-size: 50px;" class="button__icon">
+            <ion-icon name="alert-outline"></ion-icon>
+        </span>
+    </button>
     </center>
     <script>
         let btn = document.getElementsByClassName("play")[0];
         btn.addEventListener('click', event => {
             test();
         });
+        let btn2 = document.getElementsByClassName("TESTING")[0];
+        btn2.addEventListener('click', event => {
+            TESTING();
+        });
         function test() {
             document.location.href = 'https://patric-k-k.github.io/'
+        }
+        function TESTING() {
+            document.location.href = 'http://127.0.0.1:5500/Test'
         }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

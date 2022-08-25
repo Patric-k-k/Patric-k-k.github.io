@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Title Title"
+    "Topbar Topbar"
+    "Header Header"
+    "Sidebar Main"
+    "Sidebar Main"
+    "Footer Footer";
+}
+.Title {
+    grid-area: Title;
+}
+.Topbar {
+    grid-area: Topbar;
+}
+.Header {
+    grid-area: Header;
+}
+.Main {
+    grid-area: Main;
+}
+.Sidebar {
+    grid-area: Sidebar;
+    
+}
+.Footer {
+    grid-area: Footer;
+}
