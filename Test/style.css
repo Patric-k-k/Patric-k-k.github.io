@@ -1,18 +1,17 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
+    font-size: xx-large;
 }
 .grid {
     display: grid;
     grid-template-columns: auto 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "Title Title"
     "Topbar Topbar"
     "Header Header"
-    "Sidebar Main"
-    "Sidebar Main"
-    "Footer Footer";
+    "Sidebar Sidebar"
+    "Main Main";
 }
 .Title {
     grid-area: Title;
@@ -30,6 +29,64 @@
     grid-area: Sidebar;
     
 }
-.Footer {
-    grid-area: Footer;
+.footer_container {
+    background-color: #212329;
+    padding: 2rem 0 4rem 0;
+    display: flex;
+    visibility: show;
+}
+.footer {
+    width: 80%;
+    height: 40vh;
+    background-color: #212329;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    visibility: show;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    visibility: show;
+}
+.footer-heading h2 {
+    margin-bottom: 2rem;
+    transition: 0.50s ease-out;
+    visibility: show;
+}
+.footer-heading h2:hover {
+    font-size: larger;
+    transition: 5s ease-in;
+    color: red;
+    visibility: show;
+}
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: 0.5s ease-in-out;
+    visibility: show;
+}
+.footer-heading a:hover {
+    color: red;
+    transition: 5s ease-in-out;
+    font-size: larger;
+    visibility: show;
+}
+@media screen and (min-width: 736px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "Title Title"
+        "Topbar Topbar"
+        "Header Header"
+        "Sidebar Main"
+        "Sidebar Main";
+    }
 }
