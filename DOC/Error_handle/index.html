@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Home</title>
+    <link rel="stylesheet" href="/DOC/Error_handle/style.css">
+</head>
+<body>
+    <div class="grid">
+        <center>
+        <div class="Title">Documentation</div>
+        <div class="Header">Error Handling Advanced</div>
+        </center>
+        <div class="Main">
+            <p style="font-size:medium">This is the main page of Documenation for the python package located <a style="font-size: medium" href="https://github.com/Patric-k-k/Python-Advanced-Error-Handleing-Package">Here</a>, to continue click on one of the buttons on the Sidebar</p>
+        </div>
+        <div class="Sidebar">
+            <button type="button" class="Installation">
+                <span style="font-size: 50px;" class="button__text">Installation</span>
+                <span style="font-size: 50px;" class="button__icon">
+                    <ion-icon name="bug-outline"></ion-icon>
+                </span>
+            </button>
+            <br>
+            <button type="button" class="Basic">
+                <span style="font-size: 50px;" class="button__text">Basic</span>
+                <span style="font-size: 50px;" class="button__icon">
+                    <ion-icon name="bug-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
+    </div>
+    <script>
+        let btn = document.getElementsByClassName("Installation")[0];
+        btn.addEventListener('click', event => {
+            Installation();
+        });
+        function Installation() {
+            document.location.href = 'Installation.html';
+        }
+        let btn2 = document.getElementsByClassName("Basic")[0];
+        btn2.addEventListener('click', event => {
+            Basic();
+        });
+        function Basic() {
+            document.location.href = 'Basic.html';
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

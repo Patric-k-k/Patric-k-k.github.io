@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Installation</title>
+    <link rel="stylesheet" href="/DOC/Error_handle/style.css">
+</head>
+<body>
+    <div class="grid">
+        <center>
+        <div class="Title" style="background-color: grey">Installation - Documentation</div>
+        <div class="Header" style="background-color: grey">Error Handling Advanced</div>
+        </center>
+        <div class="Main" style="background-color: grey">
+            <p>To install, follow the directions <a href="https://github.com/Patric-k-k/Python-Advanced-Error-Handleing-Package">Here</a>.</p>
+        </div>
+        <div class="Sidebar" style="background-color: rgb(152, 152, 152)">
+            <button type="button" class="Back">
+                <span style="font-size: 50px;" class="button__text">Back</span>
+                <span style="font-size: 50px;" class="button__icon">
+                    <ion-icon name="bug-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
+    </div>
+    <script>
+        let btn = document.getElementsByClassName("Back")[0];
+        btn.addEventListener('click', event => {
+            Back();
+        });
+        function Back() {
+            document.location.href = 'index.html';
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
