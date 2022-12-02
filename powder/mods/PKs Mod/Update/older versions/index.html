@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Older Versions</title>
+        <link rel="stylesheet" href="./style.css">
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+    </head>
+    <l>
+        <div>
+        <h4>Update 1 not availible</h4>
+        </div><div>
+        <li>Update 2 <button id="download2">Download exe</button></li> 
+        </div><div>
+        <h4>Update 3 not availible</h4>
+        <li>Update 3.5 <button id="download3">Download exe</button></li> 
+        </div>
+
+    </l>
+    <script>
+        function download3() {
+            document.location.href = './update3.exe'
+        }
+        let btn = document.getElementById("download3");
+        btn.addEventListener('click', event => {
+            download3();
+        });
+        function download2() {
+            document.location.href = './update2.exe'
+        }
+        let btn2 = document.getElementById("download2");
+        btn2.addEventListener('click', event => {
+            download2();
+        });
+    </script>
+</html>
