@@ -15,6 +15,8 @@
         </div><div>
         <h4>Update 3 not availible</h4>
         <li>Update 3.5 <button id="download3">Download exe</button></li> 
+        </div><div>
+        <li>Update 4 <button id="download4">Download exe</button></li> 
         </div>
 
     </l>
@@ -33,5 +35,9 @@
         btn2.addEventListener('click', event => {
             download2();
         });
+        function download4() {
+            document.location.href = './update4.exe'
+        }
+        let btn4 = document.getElementById("download4");
     </script>
 </html>
