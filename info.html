@@ -1,1 +1,31 @@
-PAGE UNAVALIABLE; TRY www.Patirc-k-k.github.io/
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="transition-all duration-500">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/shoelace-autoloader.js"></script>
+    <section class="transition-all duration-500 h-screen dark:bg-slate-600 overflow-hidden dark:text-white">
+    <div class="transition-all duration-500 text-center mx-auto border-2 dark:border-slate-700 rounded-xl bg-slate-100 dark:bg-slate-800 dark:text-white">
+        <sl-tooltip content="Darkmode" class="dark:text-white">
+        <sl-icon-button onclick="if (localStorage.theme === 'light') {document.documentElement.classList.add('dark');localStorage.theme = 'dark'} else {document.documentElement.classList.remove('dark');localStorage.theme = 'light'}" name="moon-fill"label="Toggle Dark Mode"></sl-icon-button>
+    </sl-tooltip>
+    </div>
+    <main class="transition-all duration-500 flex transition-all duration-500">
+    <div class="transition-all duration-500 hidden sm:block border-2 m-8 p-8 w-60 h-60 rounded-xl dark:bg-black lg:m-80 lg:scale-[300%]">
+        <img src="./profilepic.png" class="transition-all duration-500 dark:invert select-none rounded-full p-4" width="200"/>
+    </div>
+    <div class="transition-all duration-500 border-2 m-8 p-8 w-80 dark:border-slate-800 dark:ring-4 dark:ring-offset-4 dark:ring-offset-slate-700 rounded-xl dark:bg-slate-800 lg:w-[50vw] lg:text-2xl dark:text-white text-center">
+        <div class="transition-all duration-500 block sm:hidden dark:bg-black p-4 border-2 rounded-full mx-auto w-1/3">
+        <img src="./profilepic.png" width="80" class="transition-all duration-500 dark:invert mx-auto rounded-full"/>
+        </div>
+        <h2 class="text-xl lg:text-3xl">Patrick K</h2>
+        <p>I can code in HTML, CSS, JS, Lua, Python, C++ and VBScript. I'm pretty good at programming, I'd say. I also know how to make minecraft datapacks. I like playing video games like: Teardown, Gmod, Factorio, Cities: Skylines 1 & 2, minecraft, and more.</p>
+    </div>
+</main>
+</section>
+</body>
+</html>
